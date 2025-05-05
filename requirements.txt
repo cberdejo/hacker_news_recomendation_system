@@ -1,0 +1,5 @@
+qdrant-client
+selenium
+sentence-transformers
+spacy
+
