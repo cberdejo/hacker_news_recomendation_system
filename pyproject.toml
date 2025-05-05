@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "simple_example_recomendation_system"
+version = "0.1.0"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pip>=25.1.1",
+    "qdrant-client>=1.14.2",
+    "selenium>=4.32.0",
+    "sentence-transformers>=4.1.0",
+    "spacy>=3.8.5",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff"
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
